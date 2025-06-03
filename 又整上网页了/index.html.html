@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>猫蛙食堂</title>
+    <link rel="stylesheet" href="样式.css">
+    <style>
+        /* 新增幻灯片样式 */
+        .intro-section {
+            position: relative;
+            min-height: 400px;
+            padding: 40px;
+            overflow: hidden;
+        }
+        
+        .slideshow-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            animation: slideShow 20s infinite;
+            opacity: 0.8;
+            background-size: cover;
+        }
+
+        @keyframes slideShow {
+            0%, 100% { background-image: url('f:/又整上网页了/images/slideshow/slide1.jpg'); }
+            25% { background-image: url('images/slideshow/slide2.jpg'); }
+            50% { background-image: url('images/slideshow/slide3.jpg'); }
+            75% { background-image: url('images/slideshow/slide4.jpg'); }
+        }
+
+        .intro-section h2,
+        .intro-section p {
+            position: relative;
+            background: rgba(255,255,255,0.8);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">🐱 猫蛙食堂 🐸</div>
+        <ul class="nav-links">
+            <li><a href="首页.html" data-en="Home">首页</a></li>
+            <li><a href="作者.html" data-en="Authors">作者</a></li>
+            <li><a href="文学作品.html" data-en="Literature">文学作品</a></li>
+            <li><a href="绘画作品.html" data-en="Artworks">绘画作品</a></li>
+            <li><a href="视频作品.html" data-en="Videos">视频作品</a></li>
+            <li><a href="国际化.html" data-en="International">国际化计划</a></li>
+        </ul>
+    </nav>
+    
+    <div class="hero-section">
+        <!-- 这里是背景图片部分 -->
+        <div class="hero-content">
+            <h1>欢迎来到猫蛙食堂</h1>
+            <p>这里是关于SEVENTEEN成员文俊辉与徐明浩的专属同人网站</p>
+            <p>ONLY FOR JUN AND THE8</p>
+            <p>仅俊八不拆不逆</p>
+            <p>所有资源均来自网络，仅供个人学习交流使用</p>
+        </div>
+    </div>
+
+    <main class="main-content">
+        <section class="intro-section">
+            <div class="slideshow-bg"></div>
+            <h2>关于我们</h2>
+            <p>猫蛙食堂致力于收集和展示优秀的同人创作，包括文学、绘画和视频作品！</p>
+            <p>这里是月光石们的温暖港湾，我们用创意和热爱编织属于他们的故事，让每一份灵感都绽放成美好的作品。</p>
+            <p>愿每一位来到这里的创作者都能找到共鸣，让我们一起用作品传递对他们的爱意。</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 猫蛙食堂 版权所有</p>
+        <p>作者&copy;<a href="https://weibo.com/u/6018280345" target="_blank" style="color: white; text-decoration: underline;">吃个乐饼八</a></p>
+        <p>资源整合&copy;<a href="https://weibo.com/u/7231200372" target="_blank" style="color: white; text-decoration: underline;">炀廷</a></p>
+    </footer>
+</body>
+</html>
